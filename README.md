@@ -63,6 +63,21 @@ Contains the basic template of yii2
 git pull origin master
 ~~~
 
+### Branch Basic User Authentication
+Contains the basic user authentication provided in Advanced template
+
+Get the code from the brand Basic_User_Authentication
+~~~
+git pull origin Basic_User_Authentication
+~~~
+
+Apply the migration
+~~~
+yii migrate m190901_222201_create_user_table
+~~~
+**NOTE:** 
+For receive emails with reset tokens or validation emails don't forget configure the SmtpFileTransport.
+
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
