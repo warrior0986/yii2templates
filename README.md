@@ -45,6 +45,25 @@ INSTALLATION
 
 ### Install via Composer
 
+follow this link: https://www.yiiframework.com/doc/guide/2.0/en/start-installation
+
+DESCRIPTION
+-----------
+
+This repository contains differents templates based on Yii2 basic template. Each template corresponds to the add of different features and is grown incrementally, i.e the last branch contains all the previous branches. You only needs to make a pull for the branch you need, you can add a remote to your github folder
+
+~~~
+git remote add origin git@github.com:warrior0986/yii2templates.git
+~~~
+
+### Branch Master
+Contains the basic template of yii2
+
+~~~
+git pull origin master
+~~~
+
+<!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
@@ -230,4 +249,4 @@ vendor/bin/codecept run unit -- --coverage-html --coverage-xml
 vendor/bin/codecept run functional,unit -- --coverage-html --coverage-xml
 ```
 
-You can see code coverage output under the `tests/_output` directory.
+You can see code coverage output under the `tests/_output` directory. -->
