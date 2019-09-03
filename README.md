@@ -43,14 +43,12 @@ The minimum requirement by this project template that your Web server supports P
 INSTALLATION
 ------------
 
-### Install via Composer
-
-follow this link: https://www.yiiframework.com/doc/guide/2.0/en/start-installation
+You need to create an empty file, initialize this new folder like a github directory and make a pull of the Branch/Template you want. it's not necessary to install de yii2 app via composer.
 
 DESCRIPTION
 -----------
 
-This repository contains differents templates based on Yii2 basic template. Each template corresponds to the add of different features and is grown incrementally, i.e the last branch contains all the previous branches. You only needs to make a pull for the branch you need, you can add a remote to your github folder
+This repository contains differents templates based on Yii2 basic template. Each template corresponds to the add of different features and is grown incrementally, i.e the last branch contains all the previous branches (it is possible that there are branches that do not depend entirely on others). You only needs to make a pull for the branch you need, you can add a remote to your github folder. In the description below each branch tells you what features it has.
 
 ~~~
 git remote add origin git@github.com:warrior0986/yii2templates.git
