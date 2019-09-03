@@ -78,6 +78,27 @@ yii migrate m190901_222201_create_user_table
 **NOTE:** 
 For receive emails with reset tokens or validation emails don't forget configure the SmtpFileTransport.
 
+### Branch Material Design
+Contains
+
+- Basic User Authentication Branch
+- Yii2 Material Design by https://github.com/ramosisw/yii2-material-dashboard
+- Yii2 Sweet Alert by https://github.com/yii2mod/yii2-sweet-alert: Override the default yiiConfirm dialog
+
+Get the code from the brand Basic_User_Authentication
+~~~
+git pull origin material_design
+~~~
+
+For make use of Sweet Alert: Create a new Flash in you controller:
+
+~~~
+Yii::$app->getSession()->setFlash('success', [
+                    'message' => 'Thank you for contacting us. We will respond to you as soon as possible.',
+                    'title' => 'Success',
+                    'type' => 'success'
+                ]);
+~~~
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
