@@ -2,15 +2,22 @@
 
 /* @var $this \yii\web\View */
 /* @var $content string */
-
-use app\widgets\Alert;
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
-AppAsset::register($this);
+if (class_exists('ramosisw\CImaterial\web\MaterialAsset')) {
+    ramosisw\CImaterial\web\MaterialAsset::register($this);
+} else {
+    AppAsset::register($this);
+}
+$this->registerJsFile('@web/js/loading.js', ['depends' => [yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('@web/js/overrideConfirm.js', ['depends' => [\yii2mod\alert\AlertAsset::classname()]]);
+
+$this->registerCssFile('@web/css/loading.css');
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -63,7 +70,6 @@ AppAsset::register($this);
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
-        <?= Alert::widget() ?>
         <?= $content ?>
     </div>
 </div>
@@ -75,6 +81,26 @@ AppAsset::register($this);
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
+<!--Loading-->
+<div id="loading">
+    <img src="<?= Url::to('@web/loading.gif') ?>" alt="Loading"/>
+</div>
+<!--Notificaciones-->
+<?php foreach (Yii::$app->session->getAllFlashes() as $message):;  ?>
+    <?php 
+    echo \yii2mod\alert\Alert::widget([
+        'useSessionFlash' => false,
+        'options' =>[
+            'type' => (!empty($message['type'])) ? $message['type'] : 'error',
+            'timer' => (isset($message['timer'])) ? $message['timer'] : 2500,
+            'title' => (!empty($message['title'])) ? Html::encode($message['title']) : 'Title Not Set!',
+            'text' => (!empty($message['message'])) ? Html::encode($message['message']) : 'Message Not Set!',
+            'showConfirmButton' => false,
+        ],
+        'callback' => '' //Para que funcione el timer ya que el callback por defecto se concatena al final del js, evitando que se ejecute bien el timer
+    ]);
+    ?>
+<?php endforeach; ?>
 
 <?php $this->endBody() ?>
 </body>

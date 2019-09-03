@@ -31,6 +31,11 @@ class ComposerStaticInitc913b4013b6275da12eff82816b7aa99
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
+            'yii2mod\\alert\\' => 14,
+        ),
+        'r' => 
+        array (
+            'ramosisw\\CImaterial\\' => 20,
         ),
         'p' => 
         array (
@@ -123,6 +128,14 @@ class ComposerStaticInitc913b4013b6275da12eff82816b7aa99
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'yii2mod\\alert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yii2mod/yii2-sweet-alert',
+        ),
+        'ramosisw\\CImaterial\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramosisw/yii2-material-dashboard',
         ),
         'phpDocumentor\\Reflection\\' => 
         array (
