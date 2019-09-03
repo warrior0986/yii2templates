@@ -101,9 +101,9 @@ Yii::$app->getSession()->setFlash('success', [
 ### Branch Material Design with Sidebar Menu
 Contains
 
-Basic User Authentication Branch
-Material Design Branch
-Sidebar menu with static items: this items can be configured in the file `layouts/left.php`
+- Basic User Authentication Branch
+- Material Design Branch
+- Sidebar menu with static items: this items can be configured in the file `layouts/left.php`
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
