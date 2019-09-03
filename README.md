@@ -76,6 +76,7 @@ yii migrate m190901_222201_create_user_table
 **NOTE:** 
 For receive emails with reset tokens or validation emails don't forget configure the SmtpFileTransport.
 
+<<<<<<< HEAD
 ### Branch Material Design
 Contains
 
@@ -97,6 +98,12 @@ Yii::$app->getSession()->setFlash('success', [
                     'type' => 'success'
                 ]);
 ~~~
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 41a2fcbd17eaa86505a02fbcdd899dc79d981dd3
+>>>>>>> 948156b54ccb47abacb423b85721846d26c95f81
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).

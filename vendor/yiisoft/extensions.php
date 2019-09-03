@@ -48,4 +48,22 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'ramosisw/yii2-material-dashboard' => 
+  array (
+    'name' => 'ramosisw/yii2-material-dashboard',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@ramosisw/CImaterial' => $vendorDir . '/ramosisw/yii2-material-dashboard',
+    ),
+  ),
+  'yii2mod/yii2-sweet-alert' => 
+  array (
+    'name' => 'yii2mod/yii2-sweet-alert',
+    'version' => '1.3.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/alert' => $vendorDir . '/yii2mod/yii2-sweet-alert',
+    ),
+  ),
 );
