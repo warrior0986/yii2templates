@@ -83,7 +83,7 @@ Contains
 - Yii2 Material Design by https://github.com/ramosisw/yii2-material-dashboard
 - Yii2 Sweet Alert by https://github.com/yii2mod/yii2-sweet-alert: Override the default yiiConfirm dialog
 
-Get the code from the brand Basic_User_Authentication
+Get the code from the brand Material Design
 ~~~
 git pull origin material_design
 ~~~
@@ -104,6 +104,11 @@ Contains
 - Basic User Authentication Branch
 - Material Design Branch
 - Sidebar menu with static items: this items can be configured in the file `layouts/left.php`
+
+Get the code from the brand Material Design with Sidebar Menu
+~~~
+git pull origin material_design_sidebar_static_menu
+~~~
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
