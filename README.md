@@ -109,6 +109,7 @@ Get the code from the brand Material Design with Sidebar Menu
 ~~~
 git pull origin material_design_sidebar_static_menu
 ~~~
+
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
