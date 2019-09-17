@@ -71,7 +71,7 @@ git pull origin Basic_User_Authentication
 
 Apply the migration
 ~~~
-yii migrate m190901_222201_create_user_table
+yii migrate/to m190901_222201_create_user_table
 ~~~
 **NOTE:** 
 For receive emails with reset tokens or validation emails don't forget configure the SmtpFileTransport.
@@ -109,6 +109,30 @@ Get the code from the brand Material Design with Sidebar Menu
 ~~~
 git pull origin material_design_sidebar_static_menu
 ~~~
+
+### Branch Material Design with Sidebar Menu Dynamic
+Contains
+
+- Basic User Authentication Branch
+- Material Design Branch
+- Sidebar menu with static items: this items can be configured in the file `layouts/left.php`
+
+Get the code from the brand Material Design with Sidebar Menu
+~~~
+git pull origin sidebar_dynamic_menu
+~~~
+
+Apply the migrations in the following order:
+NOTE: the recommended use is to pull this branch directly, this branch already contains the previous branchs except for the migration, that is why the user table migration must be applied
+~~~
+yii migrate/to m190901_222201_create_user_table
+yii migrate/to m190911_235253_create_menu_table
+yii migrate/to m190911_235333_create_submenu_table.php
+yii migrate/to m190917_025321_insert_menu_submenu_rows.php
+~~~
+
+Usage:
+The left sidebar menu is created based in the database option (menu and submenu table), this options can be modified in the url `/menu/index`; if you want an option without submenu options, you just need to add the menu options with his Url; if you want an option with submenu option, you must add a menu option (in the url you can put `/`) and a submenu option. In both case the url must be `/{controller}/{action}` e.g if you want that the option goes to `http://localhost/yournameproject/customer/index`, the url option of you menu or submenu must be `/customer/index`
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
