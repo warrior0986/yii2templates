@@ -406,108 +406,6 @@
         ]
     },
     {
-        "name": "yiisoft/yii2",
-        "version": "2.0.25",
-        "version_normalized": "2.0.25.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-framework.git",
-            "reference": "c6148db8519b221d2485aa372267c063b2e198e9"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c6148db8519b221d2485aa372267c063b2e198e9",
-            "reference": "c6148db8519b221d2485aa372267c063b2e198e9",
-            "shasum": ""
-        },
-        "require": {
-            "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-            "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
-            "bower-asset/punycode": "1.3.*",
-            "bower-asset/yii2-pjax": "~2.0.1",
-            "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
-            "ext-ctype": "*",
-            "ext-mbstring": "*",
-            "ezyang/htmlpurifier": "~4.6",
-            "lib-pcre": "*",
-            "php": ">=5.4.0",
-            "yiisoft/yii2-composer": "~2.0.4"
-        },
-        "time": "2019-08-13T20:04:44+00:00",
-        "bin": [
-            "yii"
-        ],
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "role": "Founder and project lead",
-                "email": "qiang.xue@gmail.com",
-                "homepage": "http://www.yiiframework.com/"
-            },
-            {
-                "name": "Alexander Makarov",
-                "role": "Core framework development",
-                "email": "sam@rmcreative.ru",
-                "homepage": "http://rmcreative.ru/"
-            },
-            {
-                "name": "Maurizio Domba",
-                "role": "Core framework development",
-                "homepage": "http://mdomba.info/"
-            },
-            {
-                "name": "Carsten Brandt",
-                "role": "Core framework development",
-                "email": "mail@cebe.cc",
-                "homepage": "http://cebe.cc/"
-            },
-            {
-                "name": "Timur Ruziev",
-                "role": "Core framework development",
-                "email": "resurtm@gmail.com",
-                "homepage": "http://resurtm.com/"
-            },
-            {
-                "name": "Paul Klimov",
-                "role": "Core framework development",
-                "email": "klimov.paul@gmail.com"
-            },
-            {
-                "name": "Dmitry Naumenko",
-                "role": "Core framework development",
-                "email": "d.naumenko.a@gmail.com"
-            },
-            {
-                "name": "Boudewijn Vahrmeijer",
-                "role": "Core framework development",
-                "email": "info@dynasource.eu",
-                "homepage": "http://dynasource.eu"
-            }
-        ],
-        "description": "Yii PHP Framework Version 2",
-        "homepage": "http://www.yiiframework.com/",
-        "keywords": [
-            "framework",
-            "yii2"
-        ]
-    },
-    {
         "name": "yiisoft/yii2-bootstrap",
         "version": "2.0.10",
         "version_normalized": "2.0.10.0",
@@ -1054,129 +952,6 @@
         ]
     },
     {
-        "name": "opis/closure",
-        "version": "3.3.1",
-        "version_normalized": "3.3.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/opis/closure.git",
-            "reference": "92927e26d7fc3f271efe1f55bdbb073fbb2f0722"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/opis/closure/zipball/92927e26d7fc3f271efe1f55bdbb073fbb2f0722",
-            "reference": "92927e26d7fc3f271efe1f55bdbb073fbb2f0722",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.4 || ^7.0"
-        },
-        "require-dev": {
-            "jeremeamia/superclosure": "^2.0",
-            "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
-        },
-        "time": "2019-07-09T21:58:11+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.3.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Opis\\Closure\\": "src/"
-            },
-            "files": [
-                "functions.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Marius Sarca",
-                "email": "marius.sarca@gmail.com"
-            },
-            {
-                "name": "Sorin Sarca",
-                "email": "sarca_sorin@hotmail.com"
-            }
-        ],
-        "description": "A library that can be used to serialize closures (anonymous functions) and arbitrary objects.",
-        "homepage": "https://opis.io/closure",
-        "keywords": [
-            "anonymous functions",
-            "closure",
-            "function",
-            "serializable",
-            "serialization",
-            "serialize"
-        ]
-    },
-    {
-        "name": "yiisoft/yii2-debug",
-        "version": "2.1.8",
-        "version_normalized": "2.1.8.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-debug.git",
-            "reference": "959bf8206a3ec64f8949f62024a2c58d9a02e78f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/959bf8206a3ec64f8949f62024a2c58d9a02e78f",
-            "reference": "959bf8206a3ec64f8949f62024a2c58d9a02e78f",
-            "shasum": ""
-        },
-        "require": {
-            "ext-mbstring": "*",
-            "opis/closure": "^3.3",
-            "php": ">=5.4",
-            "yiisoft/yii2": "~2.0.13"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "<7",
-            "yiisoft/yii2-coding-standards": "~2.0",
-            "yiisoft/yii2-swiftmailer": "*"
-        },
-        "time": "2019-08-20T15:19:56+00:00",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\debug\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com"
-            },
-            {
-                "name": "Simon Karlen",
-                "email": "simi.albi@outlook.com"
-            }
-        ],
-        "description": "The debugger extension for the Yii framework",
-        "keywords": [
-            "debug",
-            "debugger",
-            "yii2"
-        ]
-    },
-    {
         "name": "phpspec/php-diff",
         "version": "v1.1.0",
         "version_normalized": "1.1.0.0",
@@ -1215,59 +990,6 @@
             }
         ],
         "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays)."
-    },
-    {
-        "name": "yiisoft/yii2-gii",
-        "version": "2.1.1",
-        "version_normalized": "2.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/yiisoft/yii2-gii.git",
-            "reference": "6ebe5e1550030b9b65beaf656cd175577eb74975"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/6ebe5e1550030b9b65beaf656cd175577eb74975",
-            "reference": "6ebe5e1550030b9b65beaf656cd175577eb74975",
-            "shasum": ""
-        },
-        "require": {
-            "phpspec/php-diff": "^1.1.0",
-            "yiisoft/yii2": "~2.0.14"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "<7",
-            "yiisoft/yii2-coding-standards": "~2.0"
-        },
-        "time": "2019-08-13T14:34:28+00:00",
-        "type": "yii2-extension",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "yii\\gii\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Qiang Xue",
-                "email": "qiang.xue@gmail.com"
-            }
-        ],
-        "description": "The Gii extension for the Yii framework",
-        "keywords": [
-            "code generator",
-            "gii",
-            "yii2"
-        ]
     },
     {
         "name": "fzaninotto/faker",
@@ -1424,75 +1146,6 @@
         ],
         "description": "Provides functionality to recursively process PHP variables",
         "homepage": "http://www.github.com/sebastianbergmann/recursion-context"
-    },
-    {
-        "name": "sebastian/exporter",
-        "version": "3.1.1",
-        "version_normalized": "3.1.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sebastianbergmann/exporter.git",
-            "reference": "06a9a5947f47b3029d76118eb5c22802e5869687"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/06a9a5947f47b3029d76118eb5c22802e5869687",
-            "reference": "06a9a5947f47b3029d76118eb5c22802e5869687",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^7.0",
-            "sebastian/recursion-context": "^3.0"
-        },
-        "require-dev": {
-            "ext-mbstring": "*",
-            "phpunit/phpunit": "^6.0"
-        },
-        "time": "2019-08-11T12:43:14+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.1.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "src/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Sebastian Bergmann",
-                "email": "sebastian@phpunit.de"
-            },
-            {
-                "name": "Jeff Welch",
-                "email": "whatthejeff@gmail.com"
-            },
-            {
-                "name": "Volker Dusch",
-                "email": "github@wallbash.com"
-            },
-            {
-                "name": "Adam Harvey",
-                "email": "aharvey@php.net"
-            },
-            {
-                "name": "Bernhard Schussek",
-                "email": "bschussek@gmail.com"
-            }
-        ],
-        "description": "Provides the functionality to export PHP variables for visualization",
-        "homepage": "http://www.github.com/sebastianbergmann/exporter",
-        "keywords": [
-            "export",
-            "exporter"
-        ]
     },
     {
         "name": "doctrine/instantiator",
@@ -1932,305 +1585,6 @@
         ]
     },
     {
-        "name": "symfony/dom-crawler",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/dom-crawler.git",
-            "reference": "8558d1bc4554f5cb0b66e50377457967a8969263"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/8558d1bc4554f5cb0b66e50377457967a8969263",
-            "reference": "8558d1bc4554f5cb0b66e50377457967a8969263",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "symfony/polyfill-ctype": "~1.8",
-            "symfony/polyfill-mbstring": "~1.0"
-        },
-        "require-dev": {
-            "symfony/css-selector": "~2.8|~3.0|~4.0"
-        },
-        "suggest": {
-            "symfony/css-selector": ""
-        },
-        "time": "2019-08-26T07:52:58+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\DomCrawler\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony DomCrawler Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/css-selector",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/css-selector.git",
-            "reference": "e18c5c4b35e7f17513448a25d02f7af34a4bdb41"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/css-selector/zipball/e18c5c4b35e7f17513448a25d02f7af34a4bdb41",
-            "reference": "e18c5c4b35e7f17513448a25d02f7af34a4bdb41",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8"
-        },
-        "time": "2019-08-20T13:31:17+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\CssSelector\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Jean-François Simon",
-                "email": "jeanfrancois.simon@sensiolabs.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony CssSelector Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/browser-kit",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/browser-kit.git",
-            "reference": "1a3406a6b9b61b492592a816ca056afcc9e976c0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/1a3406a6b9b61b492592a816ca056afcc9e976c0",
-            "reference": "1a3406a6b9b61b492592a816ca056afcc9e976c0",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "symfony/dom-crawler": "~2.8|~3.0|~4.0"
-        },
-        "require-dev": {
-            "symfony/css-selector": "~2.8|~3.0|~4.0",
-            "symfony/process": "~2.8|~3.0|~4.0"
-        },
-        "suggest": {
-            "symfony/process": ""
-        },
-        "time": "2019-08-26T07:52:58+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\BrowserKit\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony BrowserKit Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/yaml",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/yaml.git",
-            "reference": "3dc414b7db30695bae671a1d86013d03f4ae9834"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/yaml/zipball/3dc414b7db30695bae671a1d86013d03f4ae9834",
-            "reference": "3dc414b7db30695bae671a1d86013d03f4ae9834",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "symfony/polyfill-ctype": "~1.8"
-        },
-        "conflict": {
-            "symfony/console": "<3.4"
-        },
-        "require-dev": {
-            "symfony/console": "~3.4|~4.0"
-        },
-        "suggest": {
-            "symfony/console": "For validating YAML files using the lint command"
-        },
-        "time": "2019-08-20T13:31:17+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Yaml\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Yaml Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/event-dispatcher",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/event-dispatcher.git",
-            "reference": "3e922c4c3430b9de624e8a285dada5e61e230959"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/3e922c4c3430b9de624e8a285dada5e61e230959",
-            "reference": "3e922c4c3430b9de624e8a285dada5e61e230959",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8"
-        },
-        "conflict": {
-            "symfony/dependency-injection": "<3.3"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~2.8|~3.0|~4.0",
-            "symfony/dependency-injection": "~3.3|~4.0",
-            "symfony/expression-language": "~2.8|~3.0|~4.0",
-            "symfony/stopwatch": "~2.8|~3.0|~4.0"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "",
-            "symfony/http-kernel": ""
-        },
-        "time": "2019-08-23T08:05:57+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\EventDispatcher\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony EventDispatcher Component",
-        "homepage": "https://symfony.com"
-    },
-    {
         "name": "psr/log",
         "version": "1.1.0",
         "version_normalized": "1.1.0.0",
@@ -2278,189 +1632,6 @@
             "psr",
             "psr-3"
         ]
-    },
-    {
-        "name": "symfony/debug",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/debug.git",
-            "reference": "0b600300918780001e2821db77bc28b677794486"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/debug/zipball/0b600300918780001e2821db77bc28b677794486",
-            "reference": "0b600300918780001e2821db77bc28b677794486",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "psr/log": "~1.0"
-        },
-        "conflict": {
-            "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
-        },
-        "require-dev": {
-            "symfony/http-kernel": "~2.8|~3.0|~4.0"
-        },
-        "time": "2019-08-20T13:31:17+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Debug\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Debug Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/console",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/console.git",
-            "reference": "4510f04e70344d70952566e4262a0b11df39cb10"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/4510f04e70344d70952566e4262a0b11df39cb10",
-            "reference": "4510f04e70344d70952566e4262a0b11df39cb10",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8",
-            "symfony/debug": "~2.8|~3.0|~4.0",
-            "symfony/polyfill-mbstring": "~1.0"
-        },
-        "conflict": {
-            "symfony/dependency-injection": "<3.4",
-            "symfony/process": "<3.3"
-        },
-        "provide": {
-            "psr/log-implementation": "1.0"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~3.3|~4.0",
-            "symfony/dependency-injection": "~3.4|~4.0",
-            "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
-            "symfony/lock": "~3.4|~4.0",
-            "symfony/process": "~3.3|~4.0"
-        },
-        "suggest": {
-            "psr/log": "For using the console logger",
-            "symfony/event-dispatcher": "",
-            "symfony/lock": "",
-            "symfony/process": ""
-        },
-        "time": "2019-08-26T07:52:58+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Console\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Console Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/finder",
-        "version": "v3.4.31",
-        "version_normalized": "3.4.31.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/finder.git",
-            "reference": "1fcad80b440abcd1451767349906b6f9d3961d37"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/finder/zipball/1fcad80b440abcd1451767349906b6f9d3961d37",
-            "reference": "1fcad80b440abcd1451767349906b6f9d3961d37",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5.9|>=7.0.8"
-        },
-        "time": "2019-08-14T09:39:58+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Finder\\": ""
-            },
-            "exclude-from-classmap": [
-                "/Tests/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Finder Component",
-        "homepage": "https://symfony.com"
     },
     {
         "name": "ralouphie/getallheaders",
@@ -3333,173 +2504,6 @@
         ]
     },
     {
-        "name": "phpdocumentor/type-resolver",
-        "version": "0.4.0",
-        "version_normalized": "0.4.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/phpDocumentor/TypeResolver.git",
-            "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
-            "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^5.5 || ^7.0",
-            "phpdocumentor/reflection-common": "^1.0"
-        },
-        "require-dev": {
-            "mockery/mockery": "^0.9.4",
-            "phpunit/phpunit": "^5.2||^4.8.24"
-        },
-        "time": "2017-07-14T14:27:02+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "phpDocumentor\\Reflection\\": [
-                    "src/"
-                ]
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Mike van Riel",
-                "email": "me@mikevanriel.com"
-            }
-        ]
-    },
-    {
-        "name": "phpdocumentor/reflection-docblock",
-        "version": "4.3.1",
-        "version_normalized": "4.3.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-            "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
-            "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
-            "shasum": ""
-        },
-        "require": {
-            "php": "^7.0",
-            "phpdocumentor/reflection-common": "^1.0.0",
-            "phpdocumentor/type-resolver": "^0.4.0",
-            "webmozart/assert": "^1.0"
-        },
-        "require-dev": {
-            "doctrine/instantiator": "~1.0.5",
-            "mockery/mockery": "^1.0",
-            "phpunit/phpunit": "^6.4"
-        },
-        "time": "2019-04-30T17:48:53+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "phpDocumentor\\Reflection\\": [
-                    "src/"
-                ]
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Mike van Riel",
-                "email": "me@mikevanriel.com"
-            }
-        ],
-        "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock."
-    },
-    {
-        "name": "phpspec/prophecy",
-        "version": "1.8.1",
-        "version_normalized": "1.8.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/phpspec/prophecy.git",
-            "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/phpspec/prophecy/zipball/1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
-            "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
-            "shasum": ""
-        },
-        "require": {
-            "doctrine/instantiator": "^1.0.2",
-            "php": "^5.3|^7.0",
-            "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0",
-            "sebastian/comparator": "^1.1|^2.0|^3.0",
-            "sebastian/recursion-context": "^1.0|^2.0|^3.0"
-        },
-        "require-dev": {
-            "phpspec/phpspec": "^2.5|^3.2",
-            "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
-        },
-        "time": "2019-06-13T12:50:23+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.8.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Prophecy\\": "src/Prophecy"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Konstantin Kudryashov",
-                "email": "ever.zet@gmail.com",
-                "homepage": "http://everzet.com"
-            },
-            {
-                "name": "Marcello Duarte",
-                "email": "marcello.duarte@gmail.com"
-            }
-        ],
-        "description": "Highly opinionated mocking framework for PHP 5.3+",
-        "homepage": "https://github.com/phpspec/prophecy",
-        "keywords": [
-            "Double",
-            "Dummy",
-            "fake",
-            "mock",
-            "spy",
-            "stub"
-        ]
-    },
-    {
         "name": "phar-io/version",
         "version": "1.0.1",
         "version_normalized": "1.0.1.0",
@@ -3784,5 +2788,999 @@
             "functional testing",
             "unit testing"
         ]
+    },
+    {
+        "name": "opis/closure",
+        "version": "3.4.0",
+        "version_normalized": "3.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/opis/closure.git",
+            "reference": "60a97fff133b1669a5b1776aa8ab06db3f3962b7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/opis/closure/zipball/60a97fff133b1669a5b1776aa8ab06db3f3962b7",
+            "reference": "60a97fff133b1669a5b1776aa8ab06db3f3962b7",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.4 || ^7.0"
+        },
+        "require-dev": {
+            "jeremeamia/superclosure": "^2.0",
+            "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+        },
+        "time": "2019-09-02T21:07:33+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Opis\\Closure\\": "src/"
+            },
+            "files": [
+                "functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Marius Sarca",
+                "email": "marius.sarca@gmail.com"
+            },
+            {
+                "name": "Sorin Sarca",
+                "email": "sarca_sorin@hotmail.com"
+            }
+        ],
+        "description": "A library that can be used to serialize closures (anonymous functions) and arbitrary objects.",
+        "homepage": "https://opis.io/closure",
+        "keywords": [
+            "anonymous functions",
+            "closure",
+            "function",
+            "serializable",
+            "serialization",
+            "serialize"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2",
+        "version": "2.0.28",
+        "version_normalized": "2.0.28.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-framework.git",
+            "reference": "80bf3a6e04a0128f753cb73ba7255d8e2ae3a02f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/80bf3a6e04a0128f753cb73ba7255d8e2ae3a02f",
+            "reference": "80bf3a6e04a0128f753cb73ba7255d8e2ae3a02f",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
+            "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+            "bower-asset/punycode": "1.3.*",
+            "bower-asset/yii2-pjax": "~2.0.1",
+            "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
+            "ext-ctype": "*",
+            "ext-mbstring": "*",
+            "ezyang/htmlpurifier": "~4.6",
+            "lib-pcre": "*",
+            "php": ">=5.4.0",
+            "yiisoft/yii2-composer": "~2.0.4"
+        },
+        "time": "2019-10-08T13:14:18+00:00",
+        "bin": [
+            "yii"
+        ],
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com",
+                "homepage": "http://www.yiiframework.com/",
+                "role": "Founder and project lead"
+            },
+            {
+                "name": "Alexander Makarov",
+                "email": "sam@rmcreative.ru",
+                "homepage": "http://rmcreative.ru/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Maurizio Domba",
+                "homepage": "http://mdomba.info/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Carsten Brandt",
+                "email": "mail@cebe.cc",
+                "homepage": "http://cebe.cc/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Timur Ruziev",
+                "email": "resurtm@gmail.com",
+                "homepage": "http://resurtm.com/",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Dmitry Naumenko",
+                "email": "d.naumenko.a@gmail.com",
+                "role": "Core framework development"
+            },
+            {
+                "name": "Boudewijn Vahrmeijer",
+                "email": "info@dynasource.eu",
+                "homepage": "http://dynasource.eu",
+                "role": "Core framework development"
+            }
+        ],
+        "description": "Yii PHP Framework Version 2",
+        "homepage": "http://www.yiiframework.com/",
+        "keywords": [
+            "framework",
+            "yii2"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-debug",
+        "version": "2.1.9",
+        "version_normalized": "2.1.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-debug.git",
+            "reference": "62679af3183c308c0edffecc69778afc32ae55aa"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/62679af3183c308c0edffecc69778afc32ae55aa",
+            "reference": "62679af3183c308c0edffecc69778afc32ae55aa",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mbstring": "*",
+            "opis/closure": "^3.3",
+            "php": ">=5.4",
+            "yiisoft/yii2": "~2.0.13"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "<7",
+            "yiisoft/yii2-coding-standards": "~2.0",
+            "yiisoft/yii2-swiftmailer": "*"
+        },
+        "time": "2019-09-18T10:49:01+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\debug\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            },
+            {
+                "name": "Simon Karlen",
+                "email": "simi.albi@outlook.com"
+            }
+        ],
+        "description": "The debugger extension for the Yii framework",
+        "keywords": [
+            "debug",
+            "debugger",
+            "yii2"
+        ]
+    },
+    {
+        "name": "yiisoft/yii2-gii",
+        "version": "2.1.2",
+        "version_normalized": "2.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-gii.git",
+            "reference": "cf3e81953a9e9796eed4021f3065bc5c18ee3356"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/cf3e81953a9e9796eed4021f3065bc5c18ee3356",
+            "reference": "cf3e81953a9e9796eed4021f3065bc5c18ee3356",
+            "shasum": ""
+        },
+        "require": {
+            "phpspec/php-diff": "^1.1.0",
+            "yiisoft/yii2": "~2.0.14"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "<7",
+            "yiisoft/yii2-coding-standards": "~2.0"
+        },
+        "time": "2019-10-08T10:28:42+00:00",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\gii\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Qiang Xue",
+                "email": "qiang.xue@gmail.com"
+            }
+        ],
+        "description": "The Gii extension for the Yii framework",
+        "keywords": [
+            "code generator",
+            "gii",
+            "yii2"
+        ]
+    },
+    {
+        "name": "symfony/dom-crawler",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/dom-crawler.git",
+            "reference": "29cffc38a38f2a8ed7e494c9cea2f890a40c2359"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/29cffc38a38f2a8ed7e494c9cea2f890a40c2359",
+            "reference": "29cffc38a38f2a8ed7e494c9cea2f890a40c2359",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/polyfill-ctype": "~1.8",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "require-dev": {
+            "symfony/css-selector": "~2.8|~3.0|~4.0"
+        },
+        "suggest": {
+            "symfony/css-selector": ""
+        },
+        "time": "2019-08-30T17:42:32+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\DomCrawler\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony DomCrawler Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/browser-kit",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/browser-kit.git",
+            "reference": "abe4bf2c934ddd1fd490a7d9147df7827b5fff0f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/abe4bf2c934ddd1fd490a7d9147df7827b5fff0f",
+            "reference": "abe4bf2c934ddd1fd490a7d9147df7827b5fff0f",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/dom-crawler": "~2.8|~3.0|~4.0"
+        },
+        "require-dev": {
+            "symfony/css-selector": "~2.8|~3.0|~4.0",
+            "symfony/process": "~2.8|~3.0|~4.0"
+        },
+        "suggest": {
+            "symfony/process": ""
+        },
+        "time": "2019-09-10T10:13:59+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\BrowserKit\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony BrowserKit Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "sebastian/exporter",
+        "version": "3.1.2",
+        "version_normalized": "3.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sebastianbergmann/exporter.git",
+            "reference": "68609e1261d215ea5b21b7987539cbfbe156ec3e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/68609e1261d215ea5b21b7987539cbfbe156ec3e",
+            "reference": "68609e1261d215ea5b21b7987539cbfbe156ec3e",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0",
+            "sebastian/recursion-context": "^3.0"
+        },
+        "require-dev": {
+            "ext-mbstring": "*",
+            "phpunit/phpunit": "^6.0"
+        },
+        "time": "2019-09-14T09:02:43+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Sebastian Bergmann",
+                "email": "sebastian@phpunit.de"
+            },
+            {
+                "name": "Jeff Welch",
+                "email": "whatthejeff@gmail.com"
+            },
+            {
+                "name": "Volker Dusch",
+                "email": "github@wallbash.com"
+            },
+            {
+                "name": "Adam Harvey",
+                "email": "aharvey@php.net"
+            },
+            {
+                "name": "Bernhard Schussek",
+                "email": "bschussek@gmail.com"
+            }
+        ],
+        "description": "Provides the functionality to export PHP variables for visualization",
+        "homepage": "http://www.github.com/sebastianbergmann/exporter",
+        "keywords": [
+            "export",
+            "exporter"
+        ]
+    },
+    {
+        "name": "phpdocumentor/type-resolver",
+        "version": "0.5.1",
+        "version_normalized": "0.5.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpDocumentor/TypeResolver.git",
+            "reference": "cf842904952e64e703800d094cdf34e715a8a3ae"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/cf842904952e64e703800d094cdf34e715a8a3ae",
+            "reference": "cf842904952e64e703800d094cdf34e715a8a3ae",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0",
+            "phpdocumentor/reflection-common": "^1.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^1.0",
+            "phpunit/phpunit": "^6.4"
+        },
+        "time": "2017-12-30T13:23:38+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "phpDocumentor\\Reflection\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mike van Riel",
+                "email": "me@mikevanriel.com"
+            }
+        ]
+    },
+    {
+        "name": "phpdocumentor/reflection-docblock",
+        "version": "4.3.2",
+        "version_normalized": "4.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+            "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
+            "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0",
+            "phpdocumentor/reflection-common": "^1.0.0 || ^2.0.0",
+            "phpdocumentor/type-resolver": "~0.4 || ^1.0.0",
+            "webmozart/assert": "^1.0"
+        },
+        "require-dev": {
+            "doctrine/instantiator": "^1.0.5",
+            "mockery/mockery": "^1.0",
+            "phpunit/phpunit": "^6.4"
+        },
+        "time": "2019-09-12T14:27:41+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "phpDocumentor\\Reflection\\": [
+                    "src/"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mike van Riel",
+                "email": "me@mikevanriel.com"
+            }
+        ],
+        "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock."
+    },
+    {
+        "name": "phpspec/prophecy",
+        "version": "1.9.0",
+        "version_normalized": "1.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/phpspec/prophecy.git",
+            "reference": "f6811d96d97bdf400077a0cc100ae56aa32b9203"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/phpspec/prophecy/zipball/f6811d96d97bdf400077a0cc100ae56aa32b9203",
+            "reference": "f6811d96d97bdf400077a0cc100ae56aa32b9203",
+            "shasum": ""
+        },
+        "require": {
+            "doctrine/instantiator": "^1.0.2",
+            "php": "^5.3|^7.0",
+            "phpdocumentor/reflection-docblock": "^2.0|^3.0.2|^4.0|^5.0",
+            "sebastian/comparator": "^1.1|^2.0|^3.0",
+            "sebastian/recursion-context": "^1.0|^2.0|^3.0"
+        },
+        "require-dev": {
+            "phpspec/phpspec": "^2.5|^3.2",
+            "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
+        },
+        "time": "2019-10-03T11:07:50+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Prophecy\\": "src/Prophecy"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Konstantin Kudryashov",
+                "email": "ever.zet@gmail.com",
+                "homepage": "http://everzet.com"
+            },
+            {
+                "name": "Marcello Duarte",
+                "email": "marcello.duarte@gmail.com"
+            }
+        ],
+        "description": "Highly opinionated mocking framework for PHP 5.3+",
+        "homepage": "https://github.com/phpspec/prophecy",
+        "keywords": [
+            "Double",
+            "Dummy",
+            "fake",
+            "mock",
+            "spy",
+            "stub"
+        ]
+    },
+    {
+        "name": "symfony/debug",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/debug.git",
+            "reference": "b3e7ce815d82196435d16dc458023f8fb6b36ceb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/debug/zipball/b3e7ce815d82196435d16dc458023f8fb6b36ceb",
+            "reference": "b3e7ce815d82196435d16dc458023f8fb6b36ceb",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "psr/log": "~1.0"
+        },
+        "conflict": {
+            "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
+        },
+        "require-dev": {
+            "symfony/http-kernel": "~2.8|~3.0|~4.0"
+        },
+        "time": "2019-09-19T15:32:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Debug\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Debug Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/console",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/console.git",
+            "reference": "4727d7f3c99b9dea0ae70ed4f34645728aa90453"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/console/zipball/4727d7f3c99b9dea0ae70ed4f34645728aa90453",
+            "reference": "4727d7f3c99b9dea0ae70ed4f34645728aa90453",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/debug": "~2.8|~3.0|~4.0",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "conflict": {
+            "symfony/dependency-injection": "<3.4",
+            "symfony/process": "<3.3"
+        },
+        "provide": {
+            "psr/log-implementation": "1.0"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~3.3|~4.0",
+            "symfony/dependency-injection": "~3.4|~4.0",
+            "symfony/event-dispatcher": "~2.8|~3.0|~4.0",
+            "symfony/lock": "~3.4|~4.0",
+            "symfony/process": "~3.3|~4.0"
+        },
+        "suggest": {
+            "psr/log": "For using the console logger",
+            "symfony/event-dispatcher": "",
+            "symfony/lock": "",
+            "symfony/process": ""
+        },
+        "time": "2019-10-06T19:52:09+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Console\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/css-selector",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/css-selector.git",
+            "reference": "f819f71ae3ba6f396b4c015bd5895de7d2f1f85f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/f819f71ae3ba6f396b4c015bd5895de7d2f1f85f",
+            "reference": "f819f71ae3ba6f396b4c015bd5895de7d2f1f85f",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2019-10-01T11:57:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\CssSelector\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Jean-François Simon",
+                "email": "jeanfrancois.simon@sensiolabs.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony CssSelector Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/event-dispatcher.git",
+            "reference": "3e922c4c3430b9de624e8a285dada5e61e230959"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/3e922c4c3430b9de624e8a285dada5e61e230959",
+            "reference": "3e922c4c3430b9de624e8a285dada5e61e230959",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "conflict": {
+            "symfony/dependency-injection": "<3.3"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.8|~3.0|~4.0",
+            "symfony/dependency-injection": "~3.3|~4.0",
+            "symfony/expression-language": "~2.8|~3.0|~4.0",
+            "symfony/stopwatch": "~2.8|~3.0|~4.0"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2019-08-23T08:05:57+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/finder",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/finder.git",
+            "reference": "2b6a666d6ff7fb65d10b97d817c8e7930944afb9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/2b6a666d6ff7fb65d10b97d817c8e7930944afb9",
+            "reference": "2b6a666d6ff7fb65d10b97d817c8e7930944afb9",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8"
+        },
+        "time": "2019-09-01T21:32:23+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Finder\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Finder Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "symfony/yaml",
+        "version": "v3.4.32",
+        "version_normalized": "3.4.32.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/yaml.git",
+            "reference": "768f817446da74a776a31eea335540f9dcb53942"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/768f817446da74a776a31eea335540f9dcb53942",
+            "reference": "768f817446da74a776a31eea335540f9dcb53942",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/polyfill-ctype": "~1.8"
+        },
+        "conflict": {
+            "symfony/console": "<3.4"
+        },
+        "require-dev": {
+            "symfony/console": "~3.4|~4.0"
+        },
+        "suggest": {
+            "symfony/console": "For validating YAML files using the lint command"
+        },
+        "time": "2019-09-10T10:38:46+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Yaml\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Yaml Component",
+        "homepage": "https://symfony.com"
     }
 ]
