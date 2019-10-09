@@ -9,8 +9,8 @@ class ComposerStaticInitc913b4013b6275da12eff82816b7aa99
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
@@ -31,10 +31,29 @@ class ComposerStaticInitc913b4013b6275da12eff82816b7aa99
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
+            'yii2mod\\alert\\' => 14,
+        ),
+        'w' => 
+        array (
+            'wbraganca\\dynamicform\\' => 22,
+        ),
+        'r' => 
+        array (
+            'ramosisw\\CImaterial\\' => 20,
         ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
+        ),
+        'k' => 
+        array (
+            'kartik\\grid\\' => 12,
+            'kartik\\dialog\\' => 14,
+            'kartik\\base\\' => 12,
+        ),
+        'd' => 
+        array (
+            'dominus77\\iconpicker\\' => 21,
         ),
         'c' => 
         array (
@@ -124,11 +143,39 @@ class ComposerStaticInitc913b4013b6275da12eff82816b7aa99
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'yii2mod\\alert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yii2mod/yii2-sweet-alert',
+        ),
+        'wbraganca\\dynamicform\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wbraganca/yii2-dynamicform',
+        ),
+        'ramosisw\\CImaterial\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramosisw/yii2-material-dashboard',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+        ),
+        'kartik\\grid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-grid/src',
+        ),
+        'kartik\\dialog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-dialog/src',
+        ),
+        'kartik\\base\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base/src',
+        ),
+        'dominus77\\iconpicker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dominus77/yii2-fontawesome-iconpicker',
         ),
         'cebe\\markdown\\' => 
         array (

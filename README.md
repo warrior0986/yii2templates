@@ -110,6 +110,7 @@ Get the code from the brand Material Design with Sidebar Menu
 git pull origin material_design_sidebar_static_menu
 ~~~
 
+<<<<<<< HEAD
 ### Branch Material Design with Sidebar Menu Dynamic
 Contains
 
@@ -133,6 +134,8 @@ yii migrate/to m190917_025321_insert_menu_submenu_rows.php
 
 Usage:
 The left sidebar menu is created based in the database option (menu and submenu table), this options can be modified in the url `/menu/index`; if you want an option without submenu options, you just need to add the menu options with his Url; if you want an option with submenu option, you must add a menu option (in the url you can put `/`) and a submenu option. In both case the url must be `/{controller}/{action}` e.g if you want that the option goes to `http://localhost/yournameproject/customer/index`, the url option of you menu or submenu must be `/customer/index`
+=======
+>>>>>>> acbb8f1584afd068c9b7739122c467b07ddfb0eb
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
