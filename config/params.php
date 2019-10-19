@@ -6,4 +6,5 @@ return [
     'senderName' => 'Example.com mailer',
     'supportEmail' => 'support@example.com',
     'user.passwordResetTokenExpire' => 3600,
+    'enableRBAC' => false,
 ];

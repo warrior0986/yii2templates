@@ -11,14 +11,13 @@ use app\assets\AppAsset;
 
 if (class_exists('ramosisw\CImaterial\web\MaterialAsset')) {
     ramosisw\CImaterial\web\MaterialAsset::register($this);
-} else {
-    AppAsset::register($this);
-}
-$this->registerJsFile('@web/js/loading.js', ['depends' => [yii\web\JqueryAsset::className()]]);
-$this->registerJsFile('@web/js/ajax-modal-popup.js', ['depends' => [yii\web\JqueryAsset::className()]]);
-$this->registerJsFile('@web/js/overrideConfirm.js', ['depends' => [\yii2mod\alert\AlertAsset::classname()]]);
+} 
+AppAsset::register($this);
+// $this->registerJsFile('@web/js/loading.js', ['depends' => [yii\web\JqueryAsset::className()]]);
+// $this->registerJsFile('@web/js/ajax-modal-popup.js', ['depends' => [yii\web\JqueryAsset::className()]]);
+// $this->registerJsFile('@web/js/overrideConfirm.js', ['depends' => [\yii2mod\alert\AlertAsset::classname()]]);
 
-$this->registerCssFile('@web/css/loading.css');
+// $this->registerCssFile('@web/css/loading.css');
 
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ramosisw/yii2-material-dashboard/assets');
 ?>
@@ -42,13 +41,16 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ramosisw/yii
             ['directoryAsset' => $directoryAsset]
         )
     ?>
-    <div class="main-panel ps-active-y" style="padding-left:30px;">
+    <div class="main-panel ps-active-y" style="padding-left:15px;">
     <?php
     NavBar::begin([
+        'brandLabel' => Yii::$app->name,
         'options' => [
             'class' => 'navbar-transparent',
-            'style' => 'display:none'
+            // 'style' => 'display:none'
         ],
+        'renderInnerContainer' => false,
+        'containerOptions' => ['class' => 'container-fluid']
     ]);
     NavBar::end();
     ?>

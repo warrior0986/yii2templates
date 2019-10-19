@@ -8,6 +8,7 @@ use app\models\MenuSearch;
 use app\models\Submenu;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\web\ForbiddenHttpException;
 use yii\filters\VerbFilter;
 
 /**
@@ -36,13 +37,17 @@ class MenuController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new MenuSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        if (Yii::$app->user->can('menu-index')) {
+            $searchModel = new MenuSearch();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        } else {
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -53,9 +58,13 @@ class MenuController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        if (Yii::$app->user->can('menu-view')) {
+            return $this->render('view', [
+                'model' => $this->findModel($id),
+            ]);
+        } else {
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -65,20 +74,24 @@ class MenuController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Menu();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            Yii::$app->getSession()->setFlash('success', [
-                'message' => 'Menu option created successfully',
-                'title' => 'Success',
-                'type' => 'success'
+        if (Yii::$app->user->can('menu-create')) {
+            $model = new Menu();
+    
+            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                Yii::$app->getSession()->setFlash('success', [
+                    'message' => 'Menu option created successfully',
+                    'title' => 'Success',
+                    'type' => 'success'
+                ]);
+                return $this->redirect('index');
+            }
+    
+            return $this->render('create', [
+                'model' => $model,
             ]);
-            return $this->redirect('index');
+        } else {
+            throw new ForbiddenHttpException;
         }
-
-        return $this->render('create', [
-            'model' => $model,
-        ]);
     }
 
     /**
@@ -90,15 +103,19 @@ class MenuController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if (Yii::$app->user->can('menu-update')) {
+            $model = $this->findModel($id);
+    
+            if ($model->load(Yii::$app->request->post()) && $model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
+    
+            return $this->render('update', [
+                'model' => $model,
+            ]);
+        } else {
+            throw new ForbiddenHttpException;
         }
-
-        return $this->render('update', [
-            'model' => $model,
-        ]);
     }
 
     /**
@@ -110,15 +127,19 @@ class MenuController extends Controller
      */
     public function actionDelete($id)
     {
-        $submenus = Submenu::find()->where(['menu_id' => $id])->all();
-        if (isset($submenus)) {
-            foreach ($submenus as $key => $submenu) {
-                $submenu->delete();
+        if (Yii::$app->user->can('menu-delete')) {
+            $submenus = Submenu::find()->where(['menu_id' => $id])->all();
+            if (isset($submenus)) {
+                foreach ($submenus as $key => $submenu) {
+                    $submenu->delete();
+                }
             }
+            $this->findModel($id)->delete();
+    
+            return $this->redirect(['index']);
+        } else {
+            throw new ForbiddenHttpException;
         }
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
     }
 
     /**

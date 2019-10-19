@@ -8,6 +8,7 @@ use app\models\SubmenuSearch;
 use app\models\Menu;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\web\ForbiddenHttpException;
 use yii\filters\VerbFilter;
 
 /**
@@ -36,23 +37,31 @@ class SubmenuController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new SubmenuSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+        if (Yii::$app->user->can('submenu-index')) {
+            $searchModel = new SubmenuSearch();
+            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+    
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+        } else {
+            throw new ForbiddenHttpException;
+        }
     }
 
     public function actionIndexGrid()
     {
-        if (isset($_POST['expandRowKey'])) {
-            $searchModel = new SubmenuSearch();
-            $dataProvider = $searchModel->searchByMenuId($_POST['expandRowKey']);
-            return $this->renderPartial('index-grid', ['dataProvider'=>$dataProvider]);
+        if (Yii::$app->user->can('submenu-indexgrid')) {
+            if (isset($_POST['expandRowKey'])) {
+                $searchModel = new SubmenuSearch();
+                $dataProvider = $searchModel->searchByMenuId($_POST['expandRowKey']);
+                return $this->renderPartial('index-grid', ['dataProvider'=>$dataProvider]);
+            } else {
+                return '<div class="alert alert-danger">No data found</div>';
+            }
         } else {
-            return '<div class="alert alert-danger">No data found</div>';
+            throw new ForbiddenHttpException;
         }
     }
 
@@ -64,9 +73,13 @@ class SubmenuController extends Controller
      */
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        if (Yii::$app->user->can('menu-index')) {
+            return $this->render('view', [
+                'model' => $this->findModel($id),
+            ]);
+        } else {
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
@@ -76,36 +89,36 @@ class SubmenuController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Submenu();
-        $model->menu_id = Yii::$app->request->get('menuId');
-        // $menu_id = Yii::$app->request->get();
-        // $menu = Menu::findOne(['id' => $menu_id]);
-
-        if ($model->load(Yii::$app->request->post())) {
-            try {
-                $model->save();
-                Yii::$app->getSession()->setFlash('success', [
-                    'message' => 'Submenu option created successfully',
-                    'title' => 'Success',
-                    'type' => 'success'
-                ]);
-            } catch (\yii\db\Exception $e) {
-                Yii::$app->getSession()->setFlash('error', [
-                    'message' => 'Submenu option can not be created, Error: ' . $e->getName(),
-                    'title' => 'Error',
-                    'type' => 'error'
+        if (Yii::$app->user->can('submenu-create')) {
+            $model = new Submenu();
+            $model->menu_id = Yii::$app->request->get('menuId');
+            // $menu_id = Yii::$app->request->get();
+            // $menu = Menu::findOne(['id' => $menu_id]);
+    
+            if ($model->load(Yii::$app->request->post())) {
+                try {
+                    $model->save();
+                    Yii::$app->getSession()->setFlash('success', [
+                        'message' => 'Submenu option created successfully',
+                        'title' => 'Success',
+                        'type' => 'success'
+                    ]);
+                } catch (\yii\db\Exception $e) {
+                    Yii::$app->getSession()->setFlash('error', [
+                        'message' => 'Submenu option can not be created, Error: ' . $e->getName(),
+                        'title' => 'Error',
+                        'type' => 'error'
+                    ]);
+                }
+                return $this->redirect(['/menu/index']);
+            } elseif (Yii::$app->request->isAjax) {
+                return $this->renderAjax('create', [
+                            'model' => $model
                 ]);
             }
-            return $this->redirect(['/menu/index']);
-        } elseif (Yii::$app->request->isAjax) {
-            return $this->renderAjax('create', [
-                        'model' => $model
-            ]);
+        } else {
+            throw new ForbiddenHttpException;
         }
-
-        // return $this->renderAjax('create', [
-        //     'model' => $model,
-        // ]);
     }
 
     /**
@@ -117,28 +130,32 @@ class SubmenuController extends Controller
      */
     public function actionUpdate($id)
     {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post())) {
-            try {
-                $model->save();
-                Yii::$app->getSession()->setFlash('success', [
-                    'message' => 'Submenu option updated successfully',
-                    'title' => 'Success',
-                    'type' => 'success'
-                ]);
-            } catch (\yii\db\Exception $e) {
-                Yii::$app->getSession()->setFlash('error', [
-                    'message' => 'Submenu option can not be updated, Error: ' . $e->getName(),
-                    'title' => 'Error',
-                    'type' => 'error'
+        if (Yii::$app->user->can('submenu-update')) {
+            $model = $this->findModel($id);
+    
+            if ($model->load(Yii::$app->request->post())) {
+                try {
+                    $model->save();
+                    Yii::$app->getSession()->setFlash('success', [
+                        'message' => 'Submenu option updated successfully',
+                        'title' => 'Success',
+                        'type' => 'success'
+                    ]);
+                } catch (\yii\db\Exception $e) {
+                    Yii::$app->getSession()->setFlash('error', [
+                        'message' => 'Submenu option can not be updated, Error: ' . $e->getName(),
+                        'title' => 'Error',
+                        'type' => 'error'
+                    ]);
+                }
+                return $this->redirect(['/menu/index']);
+            } elseif (Yii::$app->request->isAjax) {
+                return $this->renderAjax('update', [
+                            'model' => $model
                 ]);
             }
-            return $this->redirect(['/menu/index']);
-        } elseif (Yii::$app->request->isAjax) {
-            return $this->renderAjax('update', [
-                        'model' => $model
-            ]);
+        } else {
+            throw new ForbiddenHttpException;
         }
     }
 
@@ -151,14 +168,18 @@ class SubmenuController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-        Yii::$app->getSession()->setFlash('success', [
-            'message' => 'Submenu option deleted successfully',
-            'title' => 'Success',
-            'type' => 'success'
-        ]);
-
-        return $this->redirect(['/menu/index']);
+        if (Yii::$app->user->can('menu-index')) {
+            $this->findModel($id)->delete();
+            Yii::$app->getSession()->setFlash('success', [
+                'message' => 'Submenu option deleted successfully',
+                'title' => 'Success',
+                'type' => 'success'
+            ]);
+    
+            return $this->redirect(['/menu/index']);
+        } else {
+            throw new ForbiddenHttpException;
+        }
     }
 
     /**
