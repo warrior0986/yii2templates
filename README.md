@@ -133,6 +133,39 @@ yii migrate/to m190917_025321_insert_menu_submenu_rows.php
 
 Usage:
 The left sidebar menu is created based in the database option (menu and submenu table), this options can be modified in the url `/menu/index`; if you want an option without submenu options, you just need to add the menu options with his Url; if you want an option with submenu option, you must add a menu option (in the url you can put `/`) and a submenu option. In both case the url must be `/{controller}/{action}` e.g if you want that the option goes to `http://localhost/yournameproject/customer/index`, the url option of you menu or submenu must be `/customer/index`
+
+### Branch RBAC Implementation
+Contains
+
+- Basic User Authentication Branch
+- Material Design Branch
+- Sidebar menu with static items: this items can be configured in the file `layouts/left.php`
+- Sidebar dynamic menu
+- RBAC Implementation
+
+Get the code from the brand Material Design with Sidebar Menu
+~~~
+git pull origin RBAC_Implementation
+~~~
+
+Apply the migrations in the following order:
+NOTE: the recommended use is to pull this branch directly, this branch already contains the previous branchs except for the migration, that is why the user table migration must be applied
+~~~
+yii migrate/to m190901_222201_create_user_table
+yii migrate/to m190911_235253_create_menu_table
+yii migrate/to m190911_235333_create_submenu_table.php
+yii migrate/to m190917_025321_insert_menu_submenu_rows.php
+yii migrate --migrationPath=@yii/rbac/migrations
+yii migrate/to m191009_020850_add_role_submenu.php
+~~~
+``
+Usage:
+The RBAC (Role Based Access Control) allows you to control the roles and permissions for each user signed, when you pull the branch directly and apply the migrations, you need to follow this steps:
+1. You need to have an admin user, for that you must signup a user in the url `site/signup`
+2. Go to url `roles/index`
+3. Assign all the permissions you want to the admin role
+4. Assign the admin role to the user signed (step 1)
+5. Modify the params `config/params.php` and set `enableRBAC => true`.
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
