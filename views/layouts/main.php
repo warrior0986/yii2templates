@@ -4,7 +4,7 @@
 /* @var $content string */
 use yii\helpers\Html;
 use yii\helpers\Url;
-use yii\bootstrap\Nav;
+// use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
@@ -12,12 +12,12 @@ use app\assets\AppAsset;
 if (class_exists('ramosisw\CImaterial\web\MaterialAsset')) {
     ramosisw\CImaterial\web\MaterialAsset::register($this);
 } 
-AppAsset::register($this);
-// $this->registerJsFile('@web/js/loading.js', ['depends' => [yii\web\JqueryAsset::className()]]);
-// $this->registerJsFile('@web/js/ajax-modal-popup.js', ['depends' => [yii\web\JqueryAsset::className()]]);
-// $this->registerJsFile('@web/js/overrideConfirm.js', ['depends' => [\yii2mod\alert\AlertAsset::classname()]]);
+// AppAsset::register($this);
+$this->registerJsFile('@web/js/loading.js', ['depends' => [yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('@web/js/ajax-modal-popup.js', ['depends' => [yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('@web/js/overrideConfirm.js', ['depends' => [\yii2mod\alert\AlertAsset::classname()]]);
 
-// $this->registerCssFile('@web/css/loading.css');
+$this->registerCssFile('@web/css/loading.css');
 
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ramosisw/yii2-material-dashboard/assets');
 ?>

@@ -45,9 +45,10 @@
 
         li{
             > a{
-                margin: 10px 15px 5px;
+                margin: 8px 13px;
                 border-radius: $border-radius-base;
                 color: $black-color;
+                padding: 5px 10px;
                 @extend .animation-transition-general;
             }
 
@@ -68,7 +69,7 @@
         p{
             margin: 0;
             line-height: 30px;
-            font-size: 14px;
+            font-size: 13px;
             // font-weight: 600;
             // text-transform: uppercase;
         }
@@ -109,7 +110,7 @@
 
     .logo{
         position: relative;
-        padding: $padding-base $padding-base;
+        padding: 5px 10px;
         z-index: 4;
 
         &:after{
