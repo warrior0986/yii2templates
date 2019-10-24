@@ -17,7 +17,12 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0"
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "ramosisw/yii2-material-dashboard": "dev-master",
+        "yii2mod/yii2-sweet-alert": "*",
+        "dominus77/yii2-fontawesome-iconpicker": "*",
+        "kartik-v/yii2-grid": "dev-master",
+        "kartik-v/yii2-widget-select2": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
