@@ -166,6 +166,22 @@ The RBAC (Role Based Access Control) allows you to control the roles and permiss
 3. Assign all the permissions you want to the admin role
 4. Assign the admin role to the user signed (step 1)
 5. Modify the params `config/params.php` and set `enableRBAC => true`.
+
+### Branch Api Structure
+Contains
+
+- Basic User Authentication Branch
+- Material Design Branch
+- Sidebar menu with static items: this items can be configured in the file `layouts/left.php`
+- Sidebar dynamic menu
+- RBAC Implementation
+- Api Structure
+
+Get the code from the brand Material Design with Sidebar Menu
+~~~
+git pull origin Api_Structure
+~~~
+
 <!-- 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
 at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
