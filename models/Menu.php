@@ -82,51 +82,55 @@ class Menu extends \yii\db\ActiveRecord
         ])->all();
     }
 
-    public function getMenuOptionsByUserId($userId) {
-        $auth = Yii::$app->authManager;
-        $permissions = $auth->getPermissionsByUser($userId);
-        $permissionsArray = array_keys($permissions);
-        $menuOpts = [];
-        $subMenuOpts = [];
-        foreach ($permissionsArray as $key => $permission) {
-            if (strpos('menuopt-', $permission) === false) {
-                $permissionExplode = explode('-', $permission);;
-                array_push($menuOpts, $permissionExplode[1]);
-                if (isset($permissionExplode[2])) {
-                    array_push($subMenuOpts, $permissionExplode[2]);
-                }
-            }
-        }
-
-        $menuOptions = (array) self::getMenu();
-        $menuOptions2 = [];
-        foreach ($menuOptions as $keyMenu => $menu) {
-            $option = [];
-            if (in_array(strtolower($menu->label),$menuOpts)) {
-                $option['id'] = $menu->id;
-                $option['label'] = $menu->label;
-                $option['icon'] = $menu->icon;
-                $option['url'] = $menu->url;
-                $option['order'] = $menu->order;
-            
-                if (!empty($menu->submenus)) { 
-                    $option['submenus'] = [];
-                    foreach ($menu->submenus as $key => $submenu) {
-                        $optionSubmenu = [];
-                        if (in_array(strtolower($submenu->label),$subMenuOpts)) {
-                            $optionSubmenu['id'] = $submenu->id;
-                            $optionSubmenu['label'] = $submenu->label;
-                            $optionSubmenu['icon'] = $submenu->icon;
-                            $optionSubmenu['url'] = $submenu->url;
-                            $optionSubmenu['order'] = $submenu->order;
-                            array_push($option['submenus'], $optionSubmenu);
-                        }
+    public static function getMenuOptionsByUserId($userId) {
+        if (!is_null($userId)) {
+            $auth = Yii::$app->authManager;
+            $permissions = $auth->getPermissionsByUser($userId);
+            $permissionsArray = array_keys($permissions);
+            $menuOpts = [];
+            $subMenuOpts = [];
+            foreach ($permissionsArray as $key => $permission) {
+                if (strpos('menuopt-', $permission) === false) {
+                    $permissionExplode = explode('-', $permission);;
+                    array_push($menuOpts, $permissionExplode[1]);
+                    if (isset($permissionExplode[2])) {
+                        array_push($subMenuOpts, $permissionExplode[2]);
                     }
                 }
-                array_push($menuOptions2, $option);
             }
-        }
 
-        return $menuOptions2;
+            $menuOptions = (array) self::getMenu();
+            $menuOptions2 = [];
+            foreach ($menuOptions as $keyMenu => $menu) {
+                $option = [];
+                if (in_array(strtolower($menu->label),$menuOpts)) {
+                    $option['id'] = $menu->id;
+                    $option['label'] = $menu->label;
+                    $option['icon'] = $menu->icon;
+                    $option['url'] = $menu->url;
+                    $option['order'] = $menu->order;
+                
+                    if (!empty($menu->submenus)) { 
+                        $option['submenus'] = [];
+                        foreach ($menu->submenus as $key => $submenu) {
+                            $optionSubmenu = [];
+                            if (in_array(strtolower($submenu->label),$subMenuOpts)) {
+                                $optionSubmenu['id'] = $submenu->id;
+                                $optionSubmenu['label'] = $submenu->label;
+                                $optionSubmenu['icon'] = $submenu->icon;
+                                $optionSubmenu['url'] = $submenu->url;
+                                $optionSubmenu['order'] = $submenu->order;
+                                array_push($option['submenus'], $optionSubmenu);
+                            }
+                        }
+                    }
+                    array_push($menuOptions2, $option);
+                }
+            }
+
+            return $menuOptions2;
+        } else {
+            return [];
+        }
     }
 }
