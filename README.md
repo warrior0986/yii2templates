@@ -17,7 +17,7 @@ features to your application.
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
 
-ACTUALLY IS UNDER CONSTRUCTION
+CURRENTLY UNDER CONSTRUCTION
 -------------------
 
 DIRECTORY STRUCTURE
