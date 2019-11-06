@@ -17,8 +17,6 @@ features to your application.
 [![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
 [![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
 
-CURRENTLY UNDER CONSTRUCTION
--------------------
 
 DIRECTORY STRUCTURE
 -------------------
@@ -49,7 +47,7 @@ INSTALLATION
 You need to create an empty file, initialize this new folder like a github directory and make a pull of the Branch/Template you want. it's not necessary to install de yii2 app via composer.
 
 
-ACTUALLY IS UNDER CONSTRUCTION
+CURRENTLY UNDER CONSTRUCTION
 -------------------
 
 DESCRIPTION
