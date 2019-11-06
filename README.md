@@ -48,6 +48,10 @@ INSTALLATION
 
 You need to create an empty file, initialize this new folder like a github directory and make a pull of the Branch/Template you want. it's not necessary to install de yii2 app via composer.
 
+
+ACTUALLY IS UNDER CONSTRUCTION
+-------------------
+
 DESCRIPTION
 -----------
 
